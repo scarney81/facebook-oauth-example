@@ -1,0 +1,17 @@
+{
+  "author": "seth carney <scarney81@gmail.com>",
+  "name": "facebook-oauth-example",
+  "description": "blah",
+  "version": "0.0.1",
+  "engines": {
+    "node": "~0.6.11"
+  },
+  "dependencies": {
+    "express": "2.5.x",
+    "jade": "0.26.x",
+    "passport": "0.1.x",
+    "passport-facebook": "0.1.x"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
