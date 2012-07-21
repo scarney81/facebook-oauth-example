@@ -10,11 +10,13 @@ module.exports = function(app) {
 
   app.get('/callback', passport.authenticate('facebook', { failureRedirect: '/error' }), function(req, res, next) {
    // Successful authentication, redirect to profile.
+   console.log("USER: ", req.user);
    res.redirect('/profile');
   });
   
   app.get('/profile', function(req, res, next) {
-    res.render('profile', { user: req.user });
+    console.log("PROFILE: ", req.user);
+    res.render('profile', { user: JSON.stringify(req.user) });
   });
 
   app.get('/error', function(req, res, next) {
